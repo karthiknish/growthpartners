@@ -29,6 +29,15 @@ export default function Home() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const scrollToConsultation = () => {
+    document
+      .getElementById("consultation")
+      .scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToGrowth = () => {
+    document.getElementById("growth").scrollIntoView({ behavior: "smooth" });
+  };
+
   const pricingData = {
     fractional: {
       title: "Fractional C-Suite",
@@ -62,7 +71,7 @@ export default function Home() {
         "Website AMC and Snagging",
         "$2000 Ad Credits (Google & Meta)",
       ],
-      link: "#qualification-form",
+      link: "#growth",
     },
   };
   const testimonials = [
@@ -210,7 +219,11 @@ export default function Home() {
               Transform your business potential into remarkable results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
-              <Button size="lg" className="w-fit">
+              <Button
+                size="lg"
+                className="w-fit"
+                onClick={scrollToConsultation}
+              >
                 Join the Waitlist
               </Button>
             </div>
@@ -294,11 +307,18 @@ export default function Home() {
                       ))}
                     </ul>
                     <div className="flex flex-col gap-4 mt-8">
-                      <Button className="w-full">Join the Waitlist</Button>
+                      <Button className="w-full" onClick={scrollToConsultation}>
+                        Join the Waitlist
+                      </Button>
                       <Button variant="outline" className="w-full" asChild>
                         <a
                           href={pricingData[activeTab].link}
-                          target="_blank"
+                          target={
+                            pricingData[activeTab].title ===
+                            "Growth Partnership"
+                              ? undefined
+                              : "_blank"
+                          }
                           rel="noopener noreferrer"
                         >
                           More Info
@@ -311,13 +331,203 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-20 bg-gray-50">
+        <section id="growth" className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">
+            <div className="max-w-4xl mx-auto">
+              <motion.h2
+                className="text-3xl font-bold text-center mb-8"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                Growth Partnership Package Details
+              </motion.h2>
+              <motion.div
+                className="grid md:grid-cols-2 gap-8"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Dedicated Growth Team
+                      </h3>
+                      <p className="text-gray-600">
+                        Access to a full team of C-suite executives working
+                        together to accelerate your business growth
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">Strategic Planning</h3>
+                      <p className="text-gray-600">
+                        Monthly strategy sessions and quarterly business reviews
+                        to ensure alignment with growth objectives
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Performance Tracking
+                      </h3>
+                      <p className="text-gray-600">
+                        Regular KPI monitoring and data-driven insights to
+                        measure and optimize business performance
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Full Implementation Support
+                      </h3>
+                      <p className="text-gray-600">
+                        Hands-on assistance in executing strategies across
+                        operations, marketing, and financial management
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">Priority Access</h3>
+                      <p className="text-gray-600">
+                        VIP access to all Profici events, networking
+                        opportunities, and exclusive resources
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Strategic Marketing & Brand Growth
+                      </h3>
+                      <p className="text-gray-600">
+                        Expert marketing guidance covering brand development,
+                        digital presence, lead generation strategies and ROI
+                        tracking
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+        <motion.section
+          className="py-20 bg-gray-50"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="container mx-auto px-4">
+            <motion.h2
+              className="text-3xl font-bold text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
               Our Success Stories
-            </h2>
+            </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <div className="mb-4">
                   <svg
                     className="w-12 h-12 mx-auto"
@@ -336,9 +546,19 @@ export default function Home() {
                 </div>
                 <h3 className="text-4xl font-bold  mb-2">125%</h3>
                 <p className="text-gray-600">Average Revenue Growth</p>
-              </div>
+              </motion.div>
 
-              <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <div className="mb-4">
                   <svg
                     className="w-12 h-12 mx-auto "
@@ -357,9 +577,19 @@ export default function Home() {
                 </div>
                 <h3 className="text-4xl font-bold  mb-2">100+</h3>
                 <p className="text-gray-600">Hours of Consulting</p>
-              </div>
+              </motion.div>
 
-              <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <div className="mb-4">
                   <svg
                     className="w-12 h-12 mx-auto "
@@ -378,9 +608,19 @@ export default function Home() {
                 </div>
                 <h3 className="text-4xl font-bold  mb-2">95%</h3>
                 <p className="text-gray-600">Client Success Rate</p>
-              </div>
+              </motion.div>
 
-              <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <div className="mb-4">
                   <svg
                     className="w-12 h-12 mx-auto"
@@ -399,9 +639,19 @@ export default function Home() {
                 </div>
                 <h3 className="text-4xl font-bold  mb-2">50+</h3>
                 <p className="text-gray-600">Satisfied Clients</p>
-              </div>
+              </motion.div>
 
-              <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <div className="mb-4">
                   <svg
                     className="w-12 h-12 mx-auto"
@@ -420,9 +670,19 @@ export default function Home() {
                 </div>
                 <h3 className="text-4xl font-bold  mb-2">25+</h3>
                 <p className="text-gray-600">Industry Partners</p>
-              </div>
+              </motion.div>
 
-              <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <div className="mb-4">
                   <svg
                     className="w-12 h-12 mx-auto"
@@ -441,13 +701,21 @@ export default function Home() {
                 </div>
                 <h3 className="text-4xl font-bold  mb-2">£10M+</h3>
                 <p className="text-gray-600">Revenue Generated</p>
-              </div>
+              </motion.div>
             </div>
-            <div className="flex justify-center mt-12">
-              <Button size="lg">Join the Waitlist</Button>
-            </div>
+            <motion.div
+              className="flex justify-center mt-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              viewport={{ once: true }}
+            >
+              <Button size="lg" onClick={scrollToConsultation}>
+                Join the Waitlist
+              </Button>
+            </motion.div>
           </div>
-        </section>
+        </motion.section>
         <section className="py-20 ">
           <motion.div
             className="text-center mb-16"
@@ -466,7 +734,9 @@ export default function Home() {
             testimonials={testimonials}
           />
           <div className="flex justify-center mt-12">
-            <Button size="lg">Join the Waitlist</Button>
+            <Button size="lg" onClick={scrollToConsultation}>
+              Join the Waitlist
+            </Button>
           </div>
         </section>
 
@@ -490,7 +760,9 @@ export default function Home() {
                   We begin with a comprehensive analysis of your business,
                   identifying key growth opportunities and challenges.
                 </p>
-                <Button className="w-full">Join the Waitlist</Button>
+                <Button className="w-full" onClick={scrollToConsultation}>
+                  Join the Waitlist
+                </Button>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <h3 className="text-xl font-bold mb-4">
@@ -500,7 +772,9 @@ export default function Home() {
                   Develop a tailored growth strategy aligned with your business
                   goals and market position.
                 </p>
-                <Button className="w-full">Join the Waitlist</Button>
+                <Button className="w-full" onClick={scrollToConsultation}>
+                  Join the Waitlist
+                </Button>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <h3 className="text-xl font-bold mb-4">
@@ -510,7 +784,9 @@ export default function Home() {
                   Execute the strategy with our expert team's support and
                   monitor progress towards your goals.
                 </p>
-                <Button className="w-full">Join the Waitlist</Button>
+                <Button className="w-full" onClick={scrollToConsultation}>
+                  Join the Waitlist
+                </Button>
               </div>
             </div>
           </div>
