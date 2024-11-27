@@ -69,7 +69,7 @@ export default function Home() {
         "Performance Marketing",
         "Organic Digital Visibility and Branding",
         "Website AMC and Snagging",
-        "$2000 Ad Credits (Google & Meta)",
+        "£2000 Ad Credits (Google & Meta)",
       ],
       link: "#growth",
     },
@@ -91,7 +91,7 @@ export default function Home() {
     },
     {
       quote:
-        "Regular business health checks and strategic planning sessions to identify growth opportunities and optimize operations.",
+        "Regular business health checks and strategic planning sessions to identify growth opportunities and optimise operations.",
       name: "Strategic Oversight",
       designation: "Core Partnership Value",
       src: "https://images.unsplash.com/photo-1709715357520-5e1047a2b691?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -105,7 +105,7 @@ export default function Home() {
     },
     {
       quote:
-        "Complete website maintenance and optimization services to ensure your digital presence matches your business growth.",
+        "Complete website maintenance and optimisation services to ensure your digital presence matches your business growth.",
       name: "Digital Infrastructure",
       designation: "Technical Support",
       src: "https://images.unsplash.com/photo-1481887328591-3e277f9473dc?q=80&w=1762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -119,7 +119,7 @@ export default function Home() {
     },
     {
       quote:
-        "Access to industry-leading tools and resources to streamline operations and maximize efficiency in your business growth journey.",
+        "Access to industry-leading tools and resources to streamline operations and maximise efficiency in your business growth journey.",
       name: "Business Tools",
       designation: "Resource Access",
       src: "https://images.unsplash.com/photo-1640622308122-b1b0f3cd5a7f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -417,7 +417,7 @@ export default function Home() {
                       </h3>
                       <p className="text-gray-600">
                         Regular KPI monitoring and data-driven insights to
-                        measure and optimize business performance
+                        measure and optimise business performance
                       </p>
                     </div>
                   </div>
