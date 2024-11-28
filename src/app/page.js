@@ -763,7 +763,7 @@ export default function Home() {
               </div>
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <h3 className="text-xl font-bold mb-4">
-                  2. Customized Planning
+                  2. Customised Planning
                 </h3>
                 <p className="text-gray-600 mb-6">
                   Develop a tailored growth strategy aligned with your business
