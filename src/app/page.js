@@ -129,7 +129,7 @@ export default function Home() {
     <div className="min-h-screen bg-background p-8">
       <main className="container mx-auto space-y-16">
         <motion.div
-          className="flex flex-col items-center gap-8 max-w-4xl mx-auto"
+          className="flex flex-col items-center mt-24 gap-8 max-w-4xl mx-auto"
           initial="initial"
           animate="animate"
           variants={fadeIn}
@@ -237,7 +237,7 @@ export default function Home() {
               Our Packages
             </h2>
 
-            <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col lg:items-center md:flex-row gap-8">
               {/* Left side tabs */}
               <div className="md:w-1/3">
                 <div className="flex flex-col gap-2">
@@ -245,9 +245,9 @@ export default function Home() {
                     <motion.button
                       key={key}
                       onClick={() => setActiveTab(key)}
-                      className={`p-4 text-left rounded-lg transition-all ${
+                      className={`p-6 text-left rounded-lg transition-all ${
                         activeTab === key
-                          ? "bg-primary text-black shadow-lg"
+                          ? "bg-gray-100 text-black shadow-lg"
                           : "bg-white hover:bg-gray-100"
                       }`}
                       whileHover={{ scale: 1.02 }}
