@@ -760,9 +760,6 @@ export default function Home() {
                   We begin with a comprehensive analysis of your business,
                   identifying key growth opportunities and challenges.
                 </p>
-                <Button className="w-full" onClick={scrollToConsultation}>
-                  Join the Waitlist
-                </Button>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <h3 className="text-xl font-bold mb-4">
@@ -772,9 +769,6 @@ export default function Home() {
                   Develop a tailored growth strategy aligned with your business
                   goals and market position.
                 </p>
-                <Button className="w-full" onClick={scrollToConsultation}>
-                  Join the Waitlist
-                </Button>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <h3 className="text-xl font-bold mb-4">
@@ -784,9 +778,6 @@ export default function Home() {
                   Execute the strategy with our expert team's support and
                   monitor progress towards your goals.
                 </p>
-                <Button className="w-full" onClick={scrollToConsultation}>
-                  Join the Waitlist
-                </Button>
               </div>
             </div>
           </div>
