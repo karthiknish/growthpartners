@@ -63,7 +63,7 @@ export default function Home() {
       link: "https://directorsbox.profici.co.uk/#consultation",
     },
     growth: {
-      title: "Stagnant to Scaling",
+      title: "Unsure to Unstoppable",
       innerTitle: "Growth Partnership",
       price: (
         <>
