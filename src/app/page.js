@@ -89,13 +89,13 @@ export default function Home() {
         "Access to experienced C-suite executives at a fraction of the cost, providing strategic leadership and guidance for sustainable growth.",
       name: "Fractional C-Suite",
       designation: "Key Growth Partner Benefit",
-      src: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "https://profici.co.uk/wp-content/uploads/2024/12/Team-Photo-Coworking-Nov-27-2023-scaled.jpg",
     },
     {
       quote:
-        "Comprehensive digital marketing strategy including performance marketing, organic visibility, and brand development with £2000 in ad credits.",
-      name: "Marketing Excellence",
-      designation: "Growth Partnership Feature",
+        "Unlock your business potential with our proven digital marketing expertise - from targeted performance campaigns to brand building, backed by £2000 in advertising credits.",
+      name: "Digital Growth Engine",
+      designation: "Marketing Solutions",
       src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
@@ -109,8 +109,8 @@ export default function Home() {
       quote:
         "Exclusive access to Directors Box membership with networking events, business consultancy meetings, and concierge services.",
       name: "Elite Network Access",
-      designation: "Membership Benefit",
-      src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      designation: "DirectorsBox Membersip",
+      src: "https://profici.co.uk/wp-content/uploads/2024/12/Profici-Post.jpeg",
     },
     {
       quote:
@@ -121,16 +121,16 @@ export default function Home() {
     },
     {
       quote:
-        "Dedicated support team providing ongoing assistance and rapid response to ensure smooth business operations and growth.",
-      name: "Premium Support",
+        "Your dedicated Account Manager provides personalized support, strategic guidance, and rapid response to drive your business growth and success.",
+      name: "Dedicated Account Manager",
       designation: "Service Excellence",
-      src: "https://images.unsplash.com/photo-1495704907664-81f74a7efd9b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "https://images.pexels.com/photos/5717941/pexels-photo-5717941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       quote:
-        "Access to industry-leading tools and resources to streamline operations and maximise efficiency in your business growth journey.",
-      name: "Business Tools",
-      designation: "Resource Access",
+        "Get exclusive access to premium stock images, videos, and cutting-edge AI tools designed to accelerate your business growth and digital presence.",
+      name: "Resource Repository",
+      designation: "Access Business Tools and Platforms for Free",
       src: "https://images.unsplash.com/photo-1640622308122-b1b0f3cd5a7f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
@@ -349,6 +349,247 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="py-20 ">
+          <motion.div
+            className="text-center mb-16"
+            initial="initial"
+            animate="animate"
+            variants={fadeIn}
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Why Choose <span className="text-yellow-400">Profici</span> As
+              Your Growth Partner
+            </h2>
+          </motion.div>
+
+          <AnimatedTestimonials
+            key={testimonials.length}
+            testimonials={testimonials}
+          />
+          <div className="flex justify-center mt-12">
+            <Button size="lg" onClick={scrollToConsultation}>
+              Get Started
+            </Button>
+          </div>
+        </section>
+        <motion.section
+          className="py-20 bg-gray-50"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="container mx-auto px-4">
+            <motion.h2
+              className="text-3xl font-bold text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              Our Success Stories
+            </motion.h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
+                <div className="mb-4">
+                  <svg
+                    className="w-12 h-12 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-4xl font-bold  mb-2">125%</h3>
+                <p className="text-gray-600">Average Revenue Growth</p>
+              </motion.div>
+
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
+                <div className="mb-4">
+                  <svg
+                    className="w-12 h-12 mx-auto "
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-4xl font-bold  mb-2">100+</h3>
+                <p className="text-gray-600">Hours of Consulting</p>
+              </motion.div>
+
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
+                <div className="mb-4">
+                  <svg
+                    className="w-12 h-12 mx-auto "
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-4xl font-bold  mb-2">20+</h3>
+                <p className="text-gray-600">Events Per Year</p>
+              </motion.div>
+
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
+                <div className="mb-4">
+                  <svg
+                    className="w-12 h-12 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-4xl font-bold  mb-2">50+</h3>
+                <p className="text-gray-600">Satisfied Clients</p>
+              </motion.div>
+
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
+                <div className="mb-4">
+                  <svg
+                    className="w-12 h-12 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-4xl font-bold  mb-2">25+</h3>
+                <p className="text-gray-600">Platform Partners</p>
+              </motion.div>
+
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+              >
+                <div className="mb-4">
+                  <svg
+                    className="w-12 h-12 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-4xl font-bold  mb-2">3x</h3>
+                <p className="text-gray-600">Increased ROAS</p>
+              </motion.div>
+            </div>
+            <motion.div
+              className="flex justify-center mt-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              viewport={{ once: true }}
+            >
+              <Button size="lg" onClick={scrollToConsultation}>
+                Get Started
+              </Button>
+            </motion.div>
+          </div>
+        </motion.section>
+
         <section id="growth" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -525,247 +766,6 @@ export default function Home() {
           viewport={{ once: true }}
         >
           <div className="container mx-auto px-4">
-            <motion.h2
-              className="text-3xl font-bold text-center mb-12"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              Our Success Stories
-            </motion.h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.2 },
-                }}
-              >
-                <div className="mb-4">
-                  <svg
-                    className="w-12 h-12 mx-auto"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-4xl font-bold  mb-2">125%</h3>
-                <p className="text-gray-600">Average Revenue Growth</p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.2 },
-                }}
-              >
-                <div className="mb-4">
-                  <svg
-                    className="w-12 h-12 mx-auto "
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-4xl font-bold  mb-2">100+</h3>
-                <p className="text-gray-600">Hours of Consulting</p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.2 },
-                }}
-              >
-                <div className="mb-4">
-                  <svg
-                    className="w-12 h-12 mx-auto "
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-4xl font-bold  mb-2">95%</h3>
-                <p className="text-gray-600">Client Success Rate</p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.2 },
-                }}
-              >
-                <div className="mb-4">
-                  <svg
-                    className="w-12 h-12 mx-auto"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-4xl font-bold  mb-2">50+</h3>
-                <p className="text-gray-600">Satisfied Clients</p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.2 },
-                }}
-              >
-                <div className="mb-4">
-                  <svg
-                    className="w-12 h-12 mx-auto"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-4xl font-bold  mb-2">25+</h3>
-                <p className="text-gray-600">Industry Partners</p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.2 },
-                }}
-              >
-                <div className="mb-4">
-                  <svg
-                    className="w-12 h-12 mx-auto"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-4xl font-bold  mb-2">3x</h3>
-                <p className="text-gray-600">Increased Online Presence</p>
-              </motion.div>
-            </div>
-            <motion.div
-              className="flex justify-center mt-12"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.7 }}
-              viewport={{ once: true }}
-            >
-              <Button size="lg" onClick={scrollToConsultation}>
-                Get Started
-              </Button>
-            </motion.div>
-          </div>
-        </motion.section>
-        <section className="py-20 ">
-          <motion.div
-            className="text-center mb-16"
-            initial="initial"
-            animate="animate"
-            variants={fadeIn}
-          >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Become Growth Partners of{" "}
-              <span className="text-yellow-400">Profici</span>
-            </h2>
-          </motion.div>
-
-          <AnimatedTestimonials
-            key={testimonials.length}
-            testimonials={testimonials}
-          />
-          <div className="flex justify-center mt-12">
-            <Button size="lg" onClick={scrollToConsultation}>
-              Get Started
-            </Button>
-          </div>
-        </section>
-
-        <motion.section
-          className="py-20 bg-gray-50"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">
               Our Growth Process
             </h2>
@@ -800,7 +800,6 @@ export default function Home() {
             </div>
           </div>
         </motion.section>
-
         <motion.section
           id="consultation"
           className="py-24 bg-black text-white rounded-3xl"

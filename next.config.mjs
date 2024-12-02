@@ -5,6 +5,12 @@ const nextConfig = {
       {
         hostname: "images.unsplash.com",
       },
+      {
+        hostname: "profici.co.uk",
+      },
+      {
+        hostname: "images.pexels.com",
+      },
     ],
   },
 };
