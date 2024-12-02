@@ -67,8 +67,8 @@ export default function Home() {
       innerTitle: "Growth Partnership",
       price: (
         <>
-          <span className="line-through">£10,000/month</span> £8,000/month till
-          end of year
+          <span className="line-through">£10,000/month</span> £8,000/month
+          before end of 2024
         </>
       ),
       features: [
