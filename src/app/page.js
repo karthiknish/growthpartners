@@ -228,7 +228,7 @@ export default function Home() {
                 className="w-fit"
                 onClick={scrollToConsultation}
               >
-                Join the Waiting List
+                Get Started
               </Button>
             </div>
           </motion.div>
@@ -251,7 +251,7 @@ export default function Home() {
                       onClick={() => setActiveTab(key)}
                       className={`p-6 text-left rounded-lg transition-all ${
                         activeTab === key
-                          ? "bg-gray-100 text-black shadow-lg"
+                          ? "bg-black text-white shadow-lg"
                           : "bg-white hover:bg-gray-100"
                       } ${
                         pricingData[key].popular
@@ -321,7 +321,7 @@ export default function Home() {
                     </ul>
                     <div className="flex flex-col gap-4 mt-8">
                       <Button className="w-full" onClick={scrollToConsultation}>
-                        Join the Waiting List
+                        Get Started
                       </Button>
                       <Button variant="outline" className="w-full" asChild>
                         <a
@@ -724,7 +724,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <Button size="lg" onClick={scrollToConsultation}>
-                Join the Waitling List
+                Get Started
               </Button>
             </motion.div>
           </div>
@@ -748,7 +748,7 @@ export default function Home() {
           />
           <div className="flex justify-center mt-12">
             <Button size="lg" onClick={scrollToConsultation}>
-              Join the Waitlist
+              Get Started
             </Button>
           </div>
         </section>
@@ -823,7 +823,7 @@ export default function Home() {
                   className="bg-white text-gray-900 hover:bg-gray-100"
                   onClick={() => setShowButton(false)}
                 >
-                  Join the Waitlist
+                  Get Started
                 </Button>
               )}
             </div>
