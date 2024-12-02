@@ -372,6 +372,217 @@ export default function Home() {
             </Button>
           </div>
         </section>
+
+        <motion.section
+          className="py-20 bg-gray-50"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Our Growth Process
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-4">
+                  1. Strategic Assessment
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  We begin with a comprehensive analysis of your business,
+                  identifying key growth opportunities and challenges.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-4">
+                  2. Customised Planning
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Develop a tailored growth strategy aligned with your business
+                  goals and market position.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-4">
+                  3. Implementation & Growth
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Execute the strategy with our expert team's support and
+                  monitor progress towards your goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+        <section id="growth" className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <motion.h2
+                className="text-3xl font-bold text-center mb-8"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                Growth Partnership Package Details
+              </motion.h2>
+              <motion.div
+                className="grid md:grid-cols-2 gap-8"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Dedicated Growth Team
+                      </h3>
+                      <p className="text-gray-600">
+                        Access to a full team of C-suite executives working
+                        together to accelerate your business growth
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">Strategic Planning</h3>
+                      <p className="text-gray-600">
+                        Monthly strategy sessions and quarterly business reviews
+                        to ensure alignment with growth objectives
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Performance Tracking
+                      </h3>
+                      <p className="text-gray-600">
+                        Regular KPI monitoring and data-driven insights to
+                        measure and optimise business performance
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Full Implementation Support
+                      </h3>
+                      <p className="text-gray-600">
+                        Hands-on assistance in executing strategies across
+                        operations, marketing, and financial management
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">Priority Access</h3>
+                      <p className="text-gray-600">
+                        VIP access to all Profici events, networking
+                        opportunities, and exclusive resources
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <svg
+                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Strategic Marketing & Brand Growth
+                      </h3>
+                      <p className="text-gray-600">
+                        Expert marketing guidance covering brand development,
+                        digital presence, lead generation strategies and ROI
+                        tracking
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
         <motion.section
           className="py-20 bg-gray-50"
           initial={{ opacity: 0 }}
@@ -587,217 +798,6 @@ export default function Home() {
                 Get Started
               </Button>
             </motion.div>
-          </div>
-        </motion.section>
-
-        <section id="growth" className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <motion.h2
-                className="text-3xl font-bold text-center mb-8"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                Growth Partnership Package Details
-              </motion.h2>
-              <motion.div
-                className="grid md:grid-cols-2 gap-8"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <svg
-                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <div>
-                      <h3 className="font-semibold mb-2">
-                        Dedicated Growth Team
-                      </h3>
-                      <p className="text-gray-600">
-                        Access to a full team of C-suite executives working
-                        together to accelerate your business growth
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <svg
-                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <div>
-                      <h3 className="font-semibold mb-2">Strategic Planning</h3>
-                      <p className="text-gray-600">
-                        Monthly strategy sessions and quarterly business reviews
-                        to ensure alignment with growth objectives
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <svg
-                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <div>
-                      <h3 className="font-semibold mb-2">
-                        Performance Tracking
-                      </h3>
-                      <p className="text-gray-600">
-                        Regular KPI monitoring and data-driven insights to
-                        measure and optimise business performance
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <svg
-                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <div>
-                      <h3 className="font-semibold mb-2">
-                        Full Implementation Support
-                      </h3>
-                      <p className="text-gray-600">
-                        Hands-on assistance in executing strategies across
-                        operations, marketing, and financial management
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <svg
-                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <div>
-                      <h3 className="font-semibold mb-2">Priority Access</h3>
-                      <p className="text-gray-600">
-                        VIP access to all Profici events, networking
-                        opportunities, and exclusive resources
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <svg
-                      className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <div>
-                      <h3 className="font-semibold mb-2">
-                        Strategic Marketing & Brand Growth
-                      </h3>
-                      <p className="text-gray-600">
-                        Expert marketing guidance covering brand development,
-                        digital presence, lead generation strategies and ROI
-                        tracking
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-        <motion.section
-          className="py-20 bg-gray-50"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">
-              Our Growth Process
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold mb-4">
-                  1. Strategic Assessment
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  We begin with a comprehensive analysis of your business,
-                  identifying key growth opportunities and challenges.
-                </p>
-              </div>
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold mb-4">
-                  2. Customised Planning
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Develop a tailored growth strategy aligned with your business
-                  goals and market position.
-                </p>
-              </div>
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold mb-4">
-                  3. Implementation & Growth
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Execute the strategy with our expert team's support and
-                  monitor progress towards your goals.
-                </p>
-              </div>
-            </div>
           </div>
         </motion.section>
         <motion.section
