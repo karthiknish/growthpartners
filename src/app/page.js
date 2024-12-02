@@ -40,7 +40,8 @@ export default function Home() {
 
   const pricingData = {
     fractional: {
-      title: "Fractional C-Suite",
+      title: "Confused to Confident",
+      innerTitle: "Fractional C-Suite",
       price: "£1,500/month",
       features: [
         "Hire a CEO, CFO, CMO at fraction of cost",
@@ -49,7 +50,8 @@ export default function Home() {
       link: "https://csuite.profici.co.uk",
     },
     directors: {
-      title: "Directors Box",
+      title: "Lost To Leaders",
+      innerTitle: "Directors Box",
       price: "£2,000/month",
       features: [
         "Networking & Community Events",
@@ -61,7 +63,8 @@ export default function Home() {
       link: "https://directorsbox.profici.co.uk",
     },
     growth: {
-      title: "Growth Partnership",
+      title: "Stagnant to Scaling",
+      innerTitle: "Growth Partnership",
       price: "£10,000/month",
       features: [
         "Free Directors Box Membership + Plus 1 for Events",
@@ -126,7 +129,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="min-h-screen bg-background p-8">
+    <div className="min-h-screen bg-background p-4">
       <main className="container mx-auto space-y-16">
         <motion.div
           className="flex flex-col items-center mt-24 gap-8 max-w-4xl mx-auto"
@@ -224,7 +227,7 @@ export default function Home() {
                 className="w-fit"
                 onClick={scrollToConsultation}
               >
-                Join the Waitlist
+                Join the Waiting List
               </Button>
             </div>
           </motion.div>
@@ -275,7 +278,7 @@ export default function Home() {
                     className="bg-white p-8 rounded-lg shadow-lg"
                   >
                     <h3 className="text-2xl font-bold mb-6">
-                      {pricingData[activeTab].title}
+                      {pricingData[activeTab].innerTitle}
                     </h3>
                     <p className="text-3xl font-bold mb-8">
                       {pricingData[activeTab].price}
@@ -308,7 +311,7 @@ export default function Home() {
                     </ul>
                     <div className="flex flex-col gap-4 mt-8">
                       <Button className="w-full" onClick={scrollToConsultation}>
-                        Join the Waitlist
+                        Join the Waiting List
                       </Button>
                       <Button variant="outline" className="w-full" asChild>
                         <a
@@ -540,7 +543,7 @@ export default function Home() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
                     />
                   </svg>
                 </div>
@@ -695,12 +698,12 @@ export default function Home() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                     />
                   </svg>
                 </div>
-                <h3 className="text-4xl font-bold  mb-2">£10M+</h3>
-                <p className="text-gray-600">Revenue Generated</p>
+                <h3 className="text-4xl font-bold  mb-2">3x</h3>
+                <p className="text-gray-600">Increased Online Presence</p>
               </motion.div>
             </div>
             <motion.div
@@ -711,7 +714,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <Button size="lg" onClick={scrollToConsultation}>
-                Join the Waitlist
+                Join the Waitling List
               </Button>
             </motion.div>
           </div>
