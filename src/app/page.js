@@ -75,6 +75,7 @@ export default function Home() {
         "£2000 Ad Credits (Google & Meta)",
       ],
       link: "#growth",
+      popular: true,
     },
   };
   const testimonials = [
@@ -252,11 +253,20 @@ export default function Home() {
                         activeTab === key
                           ? "bg-gray-100 text-black shadow-lg"
                           : "bg-white hover:bg-gray-100"
+                      } ${
+                        pricingData[key].popular
+                          ? "border-2 border-yellow-400 relative"
+                          : ""
                       }`}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       layout
                     >
+                      {pricingData[key].popular && (
+                        <span className="absolute -top-3 right-4 bg-yellow-400 text-black text-xs px-2 py-1 rounded-full">
+                          Most Popular
+                        </span>
+                      )}
                       <h3 className="text-xl font-semibold">
                         {pricingData[key].title}
                       </h3>
