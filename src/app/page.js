@@ -47,7 +47,7 @@ export default function Home() {
         "Hire a CEO, CFO, CMO at fraction of cost",
         "Monthly Business Health Check",
       ],
-      link: "https://csuite.profici.co.uk",
+      link: "https://csuite.profici.co.uk/#consultation",
     },
     directors: {
       title: "Lost To Leaders",
@@ -60,7 +60,7 @@ export default function Home() {
         "Full Access to Events",
         "Min 2 C-Suite Opportunities",
       ],
-      link: "https://directorsbox.profici.co.uk",
+      link: "https://directorsbox.profici.co.uk/#consultation",
     },
     growth: {
       title: "Stagnant to Scaling",
