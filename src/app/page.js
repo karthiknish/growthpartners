@@ -332,7 +332,7 @@ export default function Home() {
                         <a
                           href={pricingData[activeTab].link}
                           target={
-                            pricingData[activeTab].title ===
+                            pricingData[activeTab].innerTitle ===
                             "Growth Partnership"
                               ? undefined
                               : "_blank"
