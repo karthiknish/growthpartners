@@ -65,7 +65,12 @@ export default function Home() {
     growth: {
       title: "Stagnant to Scaling",
       innerTitle: "Growth Partnership",
-      price: "£10,000/month",
+      price: (
+        <>
+          <span className="line-through">£10,000/month</span> £8,000/month till
+          end of year
+        </>
+      ),
       features: [
         "Free Directors Box Membership + Plus 1 for Events",
         "Fractional C-Suite with Monthly Health Check",
