@@ -47,7 +47,9 @@ export default function Home() {
         "Hire a CEO, CFO, CMO at fraction of cost",
         "Monthly Business Health Check",
       ],
-      link: "https://csuite.profici.co.uk/#consultation",
+      getStarted:
+        "https://pay.gocardless.com/billing/static/collect-customer-details?id=BRF001KN0PNRARK3JA2WQNAD4CQBPDYZ&initial=/collect-customer-details",
+      moreInfo: "https://csuite.profici.co.uk/#consultation",
     },
     directors: {
       title: "Lost To Leaders",
@@ -60,7 +62,8 @@ export default function Home() {
         "Full Access to Events",
         "Min 2 C-Suite Opportunities",
       ],
-      link: "https://directorsbox.profici.co.uk/#consultation",
+      getStarted: "https://directorsbox.profici.co.uk/#consultation",
+      moreInfo: "https://directorsbox.profici.co.uk/#consultation",
     },
     growth: {
       title: "Unsure to Unstoppable",
@@ -79,7 +82,7 @@ export default function Home() {
         "Website AMC and Snagging",
         "£2000 Ad Credits (Google & Meta)",
       ],
-      link: "#growth",
+      moreInfo: "#growth",
       popular: true,
     },
   };
@@ -231,9 +234,15 @@ export default function Home() {
               <Button
                 size="lg"
                 className="w-fit"
-                onClick={scrollToConsultation}
+                onClick={() => {
+                  if (pricingData[activeTab]?.getStarted) {
+                    window.location.href = pricingData[activeTab].getStarted;
+                  } else {
+                    scrollToConsultation();
+                  }
+                }}
               >
-                Get Started
+                {activeTab !== "growth" ? "Buy Now" : "Get Started"}
               </Button>
             </div>
           </motion.div>
