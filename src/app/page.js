@@ -832,7 +832,7 @@ export default function Home() {
                 <iframe
                   src="//profici.co.uk/gfembed/?f=11"
                   width="100%"
-                  height="600px"
+                  height="1100px"
                   frameBorder="0"
                   className="gfiframe"
                   onLoad={(e) => e.target.classList.add("loaded")}
