@@ -830,9 +830,17 @@ export default function Home() {
             {!showButton && (
               <div className="gfiframe bg-white border border-gray-200 rounded-xl relative">
                 <iframe
-                  src="//profici.co.uk/gfembed/?f=11"
+                  src={`//profici.co.uk/gfembed/?f=11${
+                    typeof window !== "undefined"
+                      ? "&" + window.location.search.substring(1)
+                      : ""
+                  }`}
                   width="100%"
-                  height="1100px"
+                  height={
+                    typeof window !== "undefined" && window.innerWidth < 640
+                      ? "1000px"
+                      : "800px"
+                  }
                   frameBorder="0"
                   className="gfiframe"
                   onLoad={(e) => e.target.classList.add("loaded")}
