@@ -47,8 +47,7 @@ export default function Home() {
         "Hire a CEO, CFO, CMO at fraction of cost",
         "Monthly Business Health Check",
       ],
-      getStarted:
-        "https://pay.gocardless.com/billing/static/collect-customer-details?id=BRF001KN0PNRARK3JA2WQNAD4CQBPDYZ&initial=/collect-customer-details",
+      link: "https://pay.gocardless.com/billing/static/collect-customer-details?id=BRF001KN0PNRARK3JA2WQNAD4CQBPDYZ&initial=/collect-customer-details",
       moreInfo: "https://csuite.profici.co.uk/#consultation",
     },
     directors: {
@@ -62,7 +61,7 @@ export default function Home() {
         "Full Access to Events",
         "Min 2 C-Suite Opportunities",
       ],
-      getStarted: "https://directorsbox.profici.co.uk/#consultation",
+      link: "https://pay.gocardless.com/billing/static/collect-customer-details?id=BRF001KN0PNRARK3JA2WQNAD4CQBPDYZ&initial=/collect-customer-details",
       moreInfo: "https://directorsbox.profici.co.uk/#consultation",
     },
     growth: {
@@ -234,15 +233,9 @@ export default function Home() {
               <Button
                 size="lg"
                 className="w-fit"
-                onClick={() => {
-                  if (pricingData[activeTab]?.getStarted) {
-                    window.location.href = pricingData[activeTab].getStarted;
-                  } else {
-                    scrollToConsultation();
-                  }
-                }}
+                onClick={scrollToConsultation}
               >
-                {activeTab !== "growth" ? "Buy Now" : "Get Started"}
+                Get Started
               </Button>
             </div>
           </motion.div>
@@ -334,12 +327,27 @@ export default function Home() {
                       ))}
                     </ul>
                     <div className="flex flex-col gap-4 mt-8">
-                      <Button className="w-full" onClick={scrollToConsultation}>
-                        Get Started
-                      </Button>
+                      {pricingData[activeTab].link ? (
+                        <Button className="w-full" asChild>
+                          <a
+                            href={pricingData[activeTab].link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Buy Now
+                          </a>
+                        </Button>
+                      ) : (
+                        <Button
+                          className="w-full"
+                          onClick={scrollToConsultation}
+                        >
+                          Get Started
+                        </Button>
+                      )}
                       <Button variant="outline" className="w-full" asChild>
                         <a
-                          href={pricingData[activeTab].link}
+                          href={pricingData[activeTab].moreInfo}
                           target={
                             pricingData[activeTab].innerTitle ===
                             "Growth Partnership"
