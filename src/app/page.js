@@ -62,6 +62,7 @@ export default function Home() {
       ],
       link: "https://pay.gocardless.com/billing/static/collect-customer-details?id=BRF001KN0PNRARK3JA2WQNAD4CQBPDYZ&initial=/collect-customer-details",
       moreInfo: "https://directorsbox.profici.co.uk/#consultation",
+      popular: true,
     },
     growth: {
       title: "Unsure to Unstoppable",
@@ -81,7 +82,6 @@ export default function Home() {
         "£2000 Ad Credits (Google & Meta)",
       ],
       moreInfo: "#growth",
-      popular: true,
     },
   };
   const testimonials = [
